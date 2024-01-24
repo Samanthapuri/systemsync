@@ -9,6 +9,9 @@ spec:
     version: 2.2.0
   cloudCredentials: vijaysrole
   config:
+    addons:
+    - name: aws-ebs-csi-driver
+      version: latest
     iam:
       serviceAccounts:
       - metadata:
@@ -24,6 +27,24 @@ spec:
           externalDNS: false
           imageBuilder: false
       withOIDC: true
+    managedNodeGroups:
+    - amiFamily: AmazonLinux2
+      desiredCapacity: 2
+      iam:
+        withAddonPolicies:
+          autoScaler: true
+          imageBuilder: true
+      instanceTypes:
+      - t3.xlarge
+      maxSize: 2
+      minSize: 2
+      name: ngwithdate
+      privateNetworking: true
+      tags:
+        email: vijaysamanthapuri@rafay.co
+        env: cs-demo
+      volumeSize: 80
+      volumeType: gp3
     metadata:
       name: vijays-eks-test1234
       region: us-west-2
@@ -68,8 +89,7 @@ spec:
       - subnet-0700983bf90ca0ec6
       tags:
         email: vijaysamanthapuri@rafay.co
-        env: cs-demo1
-        testkey: value
+        env: cs-demo
       version: "1.25"
       volumeEncrypted: false
       volumeIOPS: 3000
