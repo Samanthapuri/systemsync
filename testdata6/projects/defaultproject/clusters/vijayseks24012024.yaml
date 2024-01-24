@@ -26,7 +26,8 @@ spec:
       name: ngwithdate
       tags:
         email: vijaysamanthapuri@rafay.co
-        env: cs-demo1
+        env: cs-demo
+        testkey: testvalue
       volumeSize: 80
       volumeType: gp3
     metadata:
@@ -55,6 +56,7 @@ spec:
       tags:
         email: vijaysamanthapuri@rafay.co
         env: cs-demo
+        testkey: testvalue
       volumeSize: 80
       volumeType: gp3
     vpc:
