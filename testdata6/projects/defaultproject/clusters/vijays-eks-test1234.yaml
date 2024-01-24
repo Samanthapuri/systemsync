@@ -68,7 +68,8 @@ spec:
       - subnet-0700983bf90ca0ec6
       tags:
         email: vijaysamanthapuri@rafay.co
-        env: cs-demo
+        env: cs-demo1
+        testkey: value
       version: "1.25"
       volumeEncrypted: false
       volumeIOPS: 3000
