@@ -34,7 +34,7 @@ spec:
       region: us-west-2
       tags:
         email: vijaysamanthapuri@rafay.co
-        env: cs-demo
+        env: cs-demo1
       version: "1.25"
     network:
       cni:
