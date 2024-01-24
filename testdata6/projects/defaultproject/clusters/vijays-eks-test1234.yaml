@@ -50,8 +50,7 @@ spec:
       region: us-west-2
       tags:
         email: vijaysamanthapuri@rafay.co
-        env: cs-demo1
-        testkey: testvalue
+        env: cs-demo
       version: "1.25"
     network:
       cni:
