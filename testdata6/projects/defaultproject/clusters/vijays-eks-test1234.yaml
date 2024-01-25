@@ -44,6 +44,7 @@ spec:
         email: vijaysamanthapuri@rafay.co
         env: cs-demo1
         myname: vijays
+        randomkey: randomvalue
       volumeSize: 80
       volumeType: gp3
     metadata:
