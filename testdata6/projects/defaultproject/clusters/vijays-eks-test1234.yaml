@@ -42,7 +42,7 @@ spec:
       privateNetworking: true
       tags:
         email: vijaysamanthapuri@rafay.co
-        env: cs-demo1
+        env: cs-demo
         myname: vijays
         randomkey: randomvalue
       volumeSize: 80
