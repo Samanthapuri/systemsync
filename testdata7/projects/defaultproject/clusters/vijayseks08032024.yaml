@@ -5,7 +5,7 @@ metadata:
   project: defaultproject
 spec:
   blueprintConfig:
-    name: opaonly
+    name: opaonly1
     version: v2
   cloudCredentials: vijaysrole
   config:
