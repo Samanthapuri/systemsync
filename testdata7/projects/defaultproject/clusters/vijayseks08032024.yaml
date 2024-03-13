@@ -5,8 +5,8 @@ metadata:
   project: defaultproject
 spec:
   blueprintConfig:
-    name: opaonly2
-    version: v2
+    name: testbluepritnvijays
+    version: v1
   cloudCredentials: vijaysrole
   config:
     addons:
